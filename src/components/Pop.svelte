@@ -106,7 +106,7 @@
   const maxCount = 150;
   const sendPop = async () => {
     const sentCount = (sendCount > maxCount)? 150 : sendCount;
-    const url = `http://schoolpopserver.herokuapp.com/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
+    const url = `https://schoolpopserver.herokuapp.com/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
     const data = await response.json();
 
