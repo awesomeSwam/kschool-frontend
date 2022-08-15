@@ -367,6 +367,7 @@
     }
 
     .tierIcon {
+      width: 45px;
       height: 25px;
     }
   }
@@ -391,6 +392,7 @@
     }
 
     .tierIcon {
+      width: 40px;
       height: 22px;
     }
   }
@@ -405,8 +407,8 @@
     background-position: center;
     background-size: contain;
     display: inline-block;
-    width: auto;
-    height: 30px;
+    width: 75px;
+    height: 40px;
   }
 
   .bronze {

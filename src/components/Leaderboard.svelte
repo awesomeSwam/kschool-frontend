@@ -141,6 +141,7 @@
     }
 
     .tierIcon {
+      width: 45px;
       height: 22px;
     }
   }
@@ -153,7 +154,7 @@
     background-position: center;
     background-size: contain;
     display: inline-block;
-    width: auto;
+    width: 58px;
     height: 30px;
   }
 

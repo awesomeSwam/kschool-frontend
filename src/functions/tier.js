@@ -6,7 +6,7 @@ const tier = (score, rank) => {
   for (let i = 0; i < scrArr.length; i++)
     if (score >= scrArr[i]) return tierArr[i];
   
-  return tierArr[0];
+  return "none";
 }
 
 module.exports = tier;
