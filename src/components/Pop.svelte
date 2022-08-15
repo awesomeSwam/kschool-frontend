@@ -103,8 +103,14 @@
     return true;
   }
 
+  let toManyReq = false;
   const maxCount = 150;
   const sendPop = async () => {
+    if (toManyReq) {
+      toManyReq = false;
+      return ;
+    }
+
     const sentCount = (sendCount > maxCount)? 150 : sendCount;
     const url = `https://schoolpopserver.herokuapp.com/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
@@ -113,7 +119,7 @@
     if (response.status === 201) {
       if (token) sendCount -= sentCount;
       token = data.token;
-
+ 
       if (isNumber(data.rank)) schoolRank = data.rank;
       if (isNumber(data.pop)) updatePop(data.pop);
       if (isNumber(data.total)) updateTotal(data.total);
@@ -122,6 +128,10 @@
       return ;
     } 
     
+    if (response.status === 429) {
+      toManyReq = true;
+    }
+
     token = "";
   }
 
