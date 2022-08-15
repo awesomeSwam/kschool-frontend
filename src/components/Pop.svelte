@@ -323,7 +323,7 @@
     flex-direction: row;
     position: absolute;
     bottom: 0;
-    width: 50%;
+    width: 80%;
     left: 50%;
     transform: translate(-50%, 0);
     margin-bottom: 30px;
@@ -372,7 +372,7 @@
     }
   }
 
-  @media (max-width: 260px) {
+  @media (max-width: 281px) {
     .title {
       font-size: 8px;
     }
