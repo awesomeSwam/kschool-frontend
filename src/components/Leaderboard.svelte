@@ -38,7 +38,7 @@
             <li class="school">
               <div class="schoolRank fontSize">{showRank(r.schoolRank)}</div>
               <div class="schoolName fontSize">{r.schoolName}</div>
-              <span class="schoolTier {tier(r.pop, r.schoolRank)}"></span>
+              <span class="schoolTier tierIcon {tier(r.pop, r.schoolRank)}"></span>
               <div class="schoolScore fontSize">{comma(r.pop)}</div>
             </li>
           {:else}

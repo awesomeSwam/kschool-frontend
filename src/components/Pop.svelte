@@ -189,7 +189,7 @@
             {schoolName}
           {/if}
         </div>
-        <span class="schoolTier {tier(schoolCount, schoolRank)}">
+        <span class="schoolTier tierIcon {tier(schoolCount, schoolRank)}">
 
         </span>
         <div class="schoolCount fontSize">
