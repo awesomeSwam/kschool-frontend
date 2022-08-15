@@ -312,7 +312,6 @@
     flex-direction: row;
     position: absolute;
     bottom: 0;
-    padding: 40px;
     width: 50%;
     left: 50%;
     transform: translate(-50%, 0);
