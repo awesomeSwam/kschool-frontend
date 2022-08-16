@@ -359,6 +359,11 @@
     font-size: 30px;
   }
 
+  .tierIcon {
+    width: 40px;
+    height: 42px;
+  }
+
   @media (max-width: 500px) {
     .fontSize {
       font-size: 18px;
@@ -419,8 +424,6 @@
     background-position: center;
     background-size: contain;
     display: inline-block;
-    width: 40px;
-    height: 42px;
   }
 
   .bronze {
