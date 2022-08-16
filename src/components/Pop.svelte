@@ -50,11 +50,11 @@
     }
   }, updateTime);
 
+  let newS = -1;
   $: {
     (show) ?
       setTimeout(() => { sendPop(); }, 0) :
-      totalCount = showTotalCount = schoolCount = showSchoolCount = schoolRank = -1;
-
+      newS = totalCount = showTotalCount = schoolCount = showSchoolCount = schoolRank = -1;
   }
 
   const updatePop = (num) => {
@@ -69,6 +69,11 @@
     const deltaCount = schoolCount - showSchoolCount;
     const time = updateTime / deltaCount; 
     const c = setInterval(() => {
+      if (newS === -1) {
+        clearInterval(c);
+        return ;
+      }
+
       if (showSchoolCount >= schoolCount) {
         clearInterval(c);
         return ;
@@ -89,6 +94,11 @@
     const deltaCount = totalCount - showTotalCount;
     const time = updateTime / deltaCount; 
     const c = setInterval(() => {
+      if (newS === -1) {
+        clearInterval(c);
+        return ;
+      }
+
       if (showTotalCount >= totalCount) {
         clearInterval(c);
         return ;
@@ -118,6 +128,8 @@
     const data = await response.json();
 
     if (response.status === 201) {
+      newS = 1;
+      
       if (token) sendCount -= sentCount;
       token = data.token;
  
