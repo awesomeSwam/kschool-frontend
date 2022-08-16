@@ -367,8 +367,8 @@
     }
 
     .tierIcon {
-      width: 45px;
-      height: 25px;
+      width: 30px;
+      height: 31.5px;
     }
   }
 
@@ -392,8 +392,8 @@
     }
 
     .tierIcon {
-      width: 40px;
-      height: 22px;
+      width: 20px;
+      height: 21px;
     }
   }
 
@@ -407,8 +407,8 @@
     background-position: center;
     background-size: contain;
     display: inline-block;
-    width: 75px;
-    height: 40px;
+    width: 40px;
+    height: 42px;
   }
 
   .bronze {
@@ -424,11 +424,11 @@
   }
 
   .platinum {
-    background-image: url("data:image/svg+xml,%3Csvg width='35' height='21' viewBox='0 0 35 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 11.3896L17.4018 7.97745L15.4154 14.0235L12.949 12.4689C11.8679 11.8825 11.1446 12.1925 9.82049 12.9296L4 11.3896Z' fill='%2300432F' stroke='%2302301C' stroke-width='1.4'/%3E%3Cpath d='M31.4945 4.9L17.9945 7.9L22.4945 12.4L23.9945 9.9C24.6948 8.88902 25.4803 8.83938 26.9945 8.9L31.4945 4.9Z' fill='%23007F59' stroke='%2302301C' stroke-width='1.4'/%3E%3Cpath d='M19 13L14.5 3L25.5 13H19Z' fill='%23018059'/%3E%3Cpath d='M19 13L14.5 3V18L19 13Z' fill='%2300432F'/%3E%3Cpath d='M14.5 18V3L25.5 13H19L14.5 18Z' stroke='%23002119' stroke-width='1.8'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 8L17.5 10L16 10.5V14.5L12.5 18L10 14L13 8Z' fill='%23007F59'/%3E%3Cpath d='M12.5 17.5L10.05 12L5.5 10L3 16.5L6 15C6.66269 18.7967 7.99691 18.9334 12.5 17.5Z' fill='%2300432F'/%3E%3Cmask id='path-3-inside-1_16_10' fill='white'%3E%3Cpath d='M17 12C17 13.3543 16.6071 14.6795 15.8691 15.815C15.131 16.9505 14.0794 17.8475 12.8417 18.3973C11.604 18.947 10.2334 19.126 8.89608 18.9124C7.55874 18.6988 6.31206 18.1019 5.30718 17.194L10 12H17Z'/%3E%3C/mask%3E%3Cpath d='M17 12C17 13.3543 16.6071 14.6795 15.8691 15.815C15.131 16.9505 14.0794 17.8475 12.8417 18.3973C11.604 18.947 10.2334 19.126 8.89608 18.9124C7.55874 18.6988 6.31206 18.1019 5.30718 17.194L10 12H17Z' stroke='%23002119' stroke-width='3.6' mask='url(%23path-3-inside-1_16_10)'/%3E%3Cpath d='M3 17L7 5L18 10L10 12L3 17Z' stroke='%23002119' stroke-width='1.2'/%3E%3Cpath d='M10.5 13L6 3L17 13H10.5Z' fill='%23018059'/%3E%3Cpath d='M10.5 13L6 3V18L10.5 13Z' fill='%2300432F'/%3E%3Cpath d='M6 18V3L17 13H10.5L6 18Z' stroke='%23002119' stroke-width='1.8'/%3E%3C/svg%3E%0A");
   }
 
   .diamond {
-    background-image: url("data:image/svg+xml,%3Csvg width='35' height='21' viewBox='0 0 35 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 11.3896L17.4018 7.97745L15.4154 14.0235L12.949 12.4689C11.8679 11.8825 11.1446 12.1925 9.82049 12.9296L4 11.3896Z' fill='%2300C9D4' stroke='%2329AAA1' stroke-width='1.4'/%3E%3Cpath d='M31.4945 4.9L17.9945 7.9L22.4945 12.4L23.9945 9.9C24.6948 8.88902 25.4803 8.83938 26.9945 8.9L31.4945 4.9Z' fill='%2347EBFD' stroke='%2329AAA1' stroke-width='1.4'/%3E%3Cpath d='M19 13L14.5 3L25.5 13H19Z' fill='%2347EBFD'/%3E%3Cpath d='M19 13L14.5 3V18L19 13Z' fill='%2300C9D4'/%3E%3Cpath d='M14.5 18V3L25.5 13H19L14.5 18Z' stroke='%23008088' stroke-width='1.8'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13 8L17.5 10L16 10.5V14.5L12.5 18L10 14L13 8Z' fill='%2347EBFD'/%3E%3Cpath d='M12.5 17.5L10.05 12L5.5 10L3 16.5L6 15C6.66269 18.7967 7.99691 18.9334 12.5 17.5Z' fill='%2300C9D4'/%3E%3Cmask id='path-3-inside-1_16_33' fill='white'%3E%3Cpath d='M17 12C17 13.3543 16.6071 14.6795 15.8691 15.815C15.131 16.9505 14.0794 17.8475 12.8417 18.3973C11.604 18.947 10.2334 19.126 8.89608 18.9124C7.55874 18.6988 6.31206 18.1019 5.30718 17.194L10 12H17Z'/%3E%3C/mask%3E%3Cpath d='M17 12C17 13.3543 16.6071 14.6795 15.8691 15.815C15.131 16.9505 14.0794 17.8475 12.8417 18.3973C11.604 18.947 10.2334 19.126 8.89608 18.9124C7.55874 18.6988 6.31206 18.1019 5.30718 17.194L10 12H17Z' stroke='%23008088' stroke-width='3.6' mask='url(%23path-3-inside-1_16_33)'/%3E%3Cpath d='M3 17L7 5L18 10L10 12L3 17Z' stroke='%2329AAA1' stroke-width='1.2'/%3E%3Cpath d='M10.5 13L6 3L17 13H10.5Z' fill='%2347EBFD'/%3E%3Cpath d='M10.5 13L6 3V18L10.5 13Z' fill='%2300C9D4'/%3E%3Cpath d='M6 18V3L17 13H10.5L6 18Z' stroke='%23008088' stroke-width='1.8'/%3E%3C/svg%3E%0A");
   }
 
   .none {
