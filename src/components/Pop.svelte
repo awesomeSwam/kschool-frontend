@@ -17,7 +17,7 @@
   let schoolRank = -1;
   let count = localStorage.getItem("count") || 0;
   let sendCount = 0;
-  let l;
+  let l, p = 0;
   let secretMode = localStorage.getItem("secretMode") === "true" || false;
   
   
@@ -34,6 +34,7 @@
     count++;
     sendCount++;
     localStorage.setItem("count", count);
+    p = (p + 1) % 2;
   }
 
   document.addEventListener("keydown", (e) => {
@@ -202,7 +203,6 @@
           {/if}
         </div>
         <span class="schoolTier tierIcon {tier(schoolCount, schoolRank)}">
-
         </span>
         <div class="schoolCount fontSize">
           {#if showSchoolCount >= 0}
@@ -225,6 +225,7 @@
         {comma(count)}
       </div>
     {/key}
+    <div class="popImage popImage-{p}"></div>
     <div class="leaderboard" on:click={() => l.changeShow()}>
       <div class="totalCount fontSize">
         {#if showTotalCount >= 0}
@@ -242,6 +243,32 @@
 {/if}
 
 <style>
+  .popImage-0 {
+    background-image: url(../Sgif1@.png);
+  }
+
+  .popImage-1 {
+    background-image: url(../Sgif2@.png);
+  }
+
+  .popImage {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    max-width: 800px;
+    max-height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    touch-action: manipulation;
+    text-align: center;
+    box-sizing: inherit;
+    display: block;
+  }
+
   .mainBtn {
     margin: 15px;
     user-select: none;
@@ -417,7 +444,6 @@
   * {
     user-select: none;
   }
-
 
   .tierIcon {
     background-repeat: no-repeat;
