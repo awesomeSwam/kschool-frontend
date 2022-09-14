@@ -49,7 +49,7 @@
           </div>
         {:else}
           <div class="none">검색 결과가 없습니다.</div>
-          <div class="none">자신의 학교가 검색되지 않을 경우 rooneylee@naver.com 으로 연락주세요.</div>
+          <div class="none">자신의 학교가 검색되지 않을 경우<br>awesomeGolang@gmail.com 으로 연락주세요.</div>
         {/each}
       {/if}
     </div>
