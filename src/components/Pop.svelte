@@ -124,7 +124,7 @@
     }
 
     const sentCount = (sendCount > maxCount)? 150 : sendCount;
-    const url = `https://schoolpopserver.herokuapp.com/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
+    const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
     const data = await response.json();
 
@@ -172,6 +172,8 @@
 </script>
 
 {#if show}
+  <img src="../Sgif1@.png" alt="" style="display:none;">
+  <img src="../Sgif2@.png" alt="" style="display:none;">
   <div class="pop">
     <a class="mainBtn btn-size" href="https://google.com">
       🌐
