@@ -169,20 +169,24 @@
   const resetSchool = () => {
     dispatch("resetSchool");
   }
+
+  const openJo = () => {
+    window.open("https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding").focus();
+  }
 </script>
 
 {#if show}
   <img src="../Sgif1@.png" alt="" style="display:none;">
   <img src="../Sgif2@.png" alt="" style="display:none;">
   <div class="pop">
-    <a class="mainBtn btn-size" href="https://google.com">
+    <a class="mainBtn btn-size" href="https://twitter.com/_awesome_dream">
       🌐
     </a>
     <div class="searchSchoolBtn btn-size" on:click={resetSchool}>
       🔍
     </div>
     <div class="title">
-      <h1>K-SCHOOL</h1>
+      <h1>K-SCHOOL</h1> <img class="jo" src="../img.png" draggable="false" on:click={openJo} alt="">
     </div>
     <div class="school">
       <div class="schoolData">
@@ -393,6 +397,13 @@
     height: 42px;
   }
 
+  .jo {
+    cursor: pointer;
+    user-select: none;
+    width: 100px;
+    height: 100px;
+  }
+
   @media (max-width: 500px) {
     .fontSize {
       font-size: 18px;
@@ -415,6 +426,11 @@
     .tierIcon {
       width: 30px;
       height: 31.5px;
+    }
+
+    .jo {
+      width: 45px;
+      height: 45px;
     }
   }
 
@@ -440,6 +456,11 @@
     .tierIcon {
       width: 20px;
       height: 21px;
+    }
+
+    .jo {
+      width: 35px;
+      height: 35px;
     }
   }
 
