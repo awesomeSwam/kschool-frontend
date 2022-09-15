@@ -1,6 +1,6 @@
 const fetchSchool = async (schoolName) => {
   try {
-    const url = encodeURI(`https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app?schoolName=${schoolName}`);
+    const url = encodeURI(`https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/school?schoolName=${schoolName}`);
     const response = await fetch(url);
     const rawData = await response.json();
 
