@@ -241,7 +241,7 @@
         {/if}
       </div>
       <div class="showLeaderboard fontSize">
-        🏆
+        &ensp;🏆
       </div>
     </div>
     <Leaderboard bind:this={l}/>
@@ -382,7 +382,6 @@
   }
 
   .totalCount {
-    margin-right: 30px;
     display: flex;
     align-items: center;
   }
@@ -404,6 +403,11 @@
     height: 100px;
   }
 
+  .btn-size {
+    margin: 15px;
+    font-size: 40px;
+  }
+
   @media (max-width: 500px) {
     .fontSize {
       font-size: 18px;
@@ -415,7 +419,7 @@
     }
 
     .btn-size {
-      margin: 5px;
+      margin: 10px;
       font-size: 18px;
     }
 
@@ -449,7 +453,7 @@
     }
 
     .btn-size {
-      margin: 2px;
+      margin: 5px;
       font-size: 10px;
     }
 
