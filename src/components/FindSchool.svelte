@@ -1,6 +1,7 @@
 <script>
   import fetchSchool from "../functions/fetchSchool.js";
   import { createEventDispatcher } from 'svelte';
+  import App from "../App.svelte";
   const dispatch = createEventDispatcher();
 
   export let show;
@@ -27,12 +28,16 @@
       getSchool();
     }
   }
+
+  const openJo = () => {
+    window.open("https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding").focus();
+  }
 </script>
 
 {#if show}
   <div class="findSchool">
     <div class="title">
-      <h1>K-SCHOOL</h1>
+      <h1>K-SCHOOL</h1> <img class="jo" src="../img.png" draggable="false" on:click={openJo} alt="">
     </div>
     <div class="input">
       <input type="text" placeholder="학교를 검색해주세요." class="schoolName-input" bind:value={schoolName} on:keypress={inputKeyPress}/>
@@ -138,7 +143,18 @@
     text-align: center;
   }
 
+  .jo {
+    cursor: pointer;
+    user-select: none;
+    width: 100px;
+    height: 100px;
+  }
+
   @media (max-width: 500px) {
+    .title {
+      font-size: 10px;
+    }
+
     .output {
       font-size: 16px;
     }
@@ -154,9 +170,18 @@
     .search {
       font-size: 20px;
     }
+
+    .jo {
+      width: 45px;
+      height: 45px;
+    }
   }
 
   @media (max-width: 300px) {
+    .title {
+      font-size: 8px;
+    }
+
     .output {
       font-size: 12px;
     }
@@ -172,6 +197,11 @@
 
     .search {
       font-size: 18px;
+    }
+
+    .jo {
+      width: 35px;
+      height: 35px;
     }
   }
 </style>
