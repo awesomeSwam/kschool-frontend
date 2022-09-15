@@ -6,7 +6,7 @@ const fetchRank = async () => {
 
     if(!("rank" in data))
       return [];
-    
+      
     return data.rank;
   } catch(error) {
     console.error(error);
