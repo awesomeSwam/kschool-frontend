@@ -14,7 +14,9 @@
   }
 
   setInterval(async () => {
-    if (show) rank = await fetchRank();
+    const r = await fetchRank();
+    if (Array.isArray(r) && r.length != 0 && show)
+      rank = await fetchRank();
   }, 4000);
 
   const showRank = (rank) => {
