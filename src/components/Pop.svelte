@@ -126,8 +126,9 @@
     const sentCount = (sendCount > maxCount)? 150 : sendCount;
     const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
+    console.log(response.status);
     const data = await response.json();
-
+    console.log(data);
     if (response.status === 201) {
       newS = 1;
       
