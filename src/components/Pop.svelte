@@ -176,15 +176,19 @@
   const openJo = () => {
     window.open("https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding").focus();
   }
+  
+  const openTwitter = () => {
+    window.open("https://twitter.com/_awesome_dream").focus();
+  }
 </script>
 
 {#if show}
   <img src="../Sgif1@.png" alt="" style="display:none;">
   <img src="../Sgif2@.png" alt="" style="display:none;">
   <div class="pop">
-    <a class="mainBtn btn-size" href="https://twitter.com/_awesome_dream">
+    <div class="mainBtn btn-size" on:click={openTwitter}>
       🌐
-    </a>
+    </div>
     <div class="searchSchoolBtn btn-size" on:click={resetSchool}>
       🔍
     </div>
@@ -247,7 +251,7 @@
         &ensp;🏆
       </div>
     </div>
-    <Leaderboard bind:this={l}/>
+    <Leaderboard bind:this={l} schoolCode={schoolCode} schoolShow={secretMode}/>
   </div>
 {/if}
 

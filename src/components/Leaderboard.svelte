@@ -2,6 +2,9 @@
   import fetchRank from "../functions/fetchRank.js";
   import tier from "../functions/tier.js";
 
+  export let schoolCode;
+  export let schoolShow;
+
   let show = false;
   let rank = [];
 
@@ -39,7 +42,7 @@
       <div class="ranking">
         <ol class="rank">
           {#each rank as r}
-            <li class="school">
+            <li class="school {(schoolCode == r.schoolCode && schoolShow) ? "" : "mySchool"}">
               <div class="schoolRank fontSize">{showRank(r.schoolRank)}</div>
               <div class="schoolName fontSize">{r.schoolName}</div>
               <span class="schoolTier tierIcon {tier(r.pop, r.schoolRank)}"></span>
@@ -142,6 +145,10 @@
   .tierIcon {
     width: 40px;
     height: 42px;
+  }
+
+  .mySchool {
+    color: limegreen;
   }
 
   @media (max-width: 500px) {
