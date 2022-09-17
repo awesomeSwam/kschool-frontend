@@ -42,7 +42,7 @@
       <div class="ranking">
         <ol class="rank">
           {#each rank as r}
-            <li class="school {(schoolCode == r.schoolCode && schoolShow) ? "" : "mySchool"}">
+            <li class="school" class:mySchool={(schoolCode == r.schoolCode) && schoolShow}>
               <div class="schoolRank fontSize">{showRank(r.schoolRank)}</div>
               <div class="schoolName fontSize">{r.schoolName}</div>
               <span class="schoolTier tierIcon {tier(r.pop, r.schoolRank)}"></span>
