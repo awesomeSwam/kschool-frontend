@@ -16,8 +16,7 @@
 		localStorage.setItem("schoolCode", code);
 	}
 
-	const resetSchool = (event) => {
-		console.log(event);
+	const resetSchool = () => {
 		showBool = true;
 	}
 </script>
