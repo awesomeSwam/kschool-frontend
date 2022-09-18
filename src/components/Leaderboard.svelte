@@ -7,6 +7,7 @@
 
   let show = false;
   let rank = [];
+  let length = -1;
 
   export const changeShow = () => {
     show = !show;
@@ -19,8 +20,10 @@
   setInterval(async () => {
     if (show) {
       const r = await fetchRank();
-      if (Array.isArray(r) && r.length != 0)
-        rank = r;
+      if (r != null) {
+        rank = r.rank;
+        length = r.length;
+      }
     }
   }, 4000);
 
@@ -37,7 +40,7 @@
 {#if show}
   <div class="leaderboard-container">
     <div class="leaderboard">
-      <span class="title fontSize">🏆 Leaderboard</span>
+      <span class="title fontSize">🏆 랭킹 ({(length == -1) ? "⏳" : length} 학교 참여)</span>
       <span class="close fontSize" on:click={changeShow}>❌</span>
       <div class="ranking">
         <ol class="rank">
