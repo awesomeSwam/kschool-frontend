@@ -7,7 +7,7 @@
   export let schoolCode;
   export let schoolName;
   
-  const updateTime = 5000;
+  const updateTime = 6000;
   
   let token = "";
   let schoolCount = -1;

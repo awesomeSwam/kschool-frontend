@@ -4,13 +4,13 @@ const fetchRank = async () => {
     const response = await fetch(url);
     const data = await response.json();
 
-    if(!("rank" in data))
-      return [];
-      
-    return data.rank;
+    if("rank" in data && "length" in data)
+      return { rank: data.rank, length: data.length };  
+    
+    return null;    
   } catch(error) {
     console.error(error);
-    return [];
+    return null;
   }
 }
 
