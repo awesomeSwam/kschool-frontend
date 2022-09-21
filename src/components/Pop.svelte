@@ -238,6 +238,22 @@
         {comma(count)}
       </div>
     {/key}
+    <div class="ad">
+      <div class="ad-1">
+        <ins class="kakao_ad_area" style="display:none;" 
+          data-ad-unit    = "DAN-VwTjr9CjMkOOoZMO" 
+          data-ad-width   = "320" 
+          data-ad-height  = "50"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </div>
+      <div class="ad-2">
+        <ins class="kakao_ad_area" style="display:none;" 
+          data-ad-unit    = "DAN-gmQr4iIxfBLNo64D" 
+          data-ad-width   = "320" 
+          data-ad-height  = "50"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </div>  
+    </div>
     <div class="popImage popImage-{p}"></div>
     <div class="leaderboard" on:click={() => l.changeShow()}>
       <div class="totalCount fontSize">
@@ -256,6 +272,11 @@
 {/if}
 
 <style>
+  .ad {
+    width: 320px;
+    margin: 0 auto;
+  }
+
   .popImage-0 {
     background-image: url(../Sgif1@.png);
   }
@@ -415,6 +436,41 @@
     font-size: 40px;
   }
 
+  @media (max-height: 1000px) {
+    .popImage {
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+    .fontSize {
+      font-size: 18px;
+    }
+    
+    .count {
+      font-size: 60px;
+      -webkit-text-stroke-width: 2px;
+    }
+
+    .btn-size {
+      margin: 10px;
+      font-size: 18px;
+    }
+
+    .title {
+      font-size: 10px;
+    }
+
+    .tierIcon {
+      width: 30px;
+      height: 31.5px;
+    }
+
+    .jo {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
   @media (max-width: 500px) {
     .fontSize {
       font-size: 18px;
@@ -442,6 +498,41 @@
     .jo {
       width: 45px;
       height: 45px;
+    }
+  }
+
+  @media (max-height: 600px) {
+    .popImage {
+      max-width: 200px;
+      max-height: 200px;
+    }
+
+    .title {
+      font-size: 8px;
+    }
+
+    .count {
+      font-size: 36px;
+      -webkit-text-stroke-width: 1.4px;
+    }
+
+    .fontSize {
+      font-size: 9px;
+    }
+
+    .btn-size {
+      margin: 5px;
+      font-size: 10px;
+    }
+
+    .tierIcon {
+      width: 20px;
+      height: 21px;
+    }
+
+    .jo {
+      width: 35px;
+      height: 35px;
     }
   }
 
