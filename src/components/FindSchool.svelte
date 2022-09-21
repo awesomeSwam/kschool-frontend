@@ -58,10 +58,30 @@
         {/each}
       {/if}
     </div>
+    <div class="ad">
+      <div class="ad-1">
+        <ins class="kakao_ad_area" style="display:none;" 
+          data-ad-unit    = "DAN-utueaeGgYHIqbuEP" 
+          data-ad-width   = "320" 
+          data-ad-height  = "50"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </div>
+      <div class="ad-2">
+        <ins class="kakao_ad_area" style="display:none;" 
+          data-ad-unit    = "DAN-ePyURk5JmlM3kyxO" 
+          data-ad-width   = "320" 
+          data-ad-height  = "50"></ins> 
+        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+      </div>
+    </div>
   </div>
 {/if}
 
 <style>
+  .ad {
+    display: contents;
+  }
+
   .findSchool {
     position: fixed;
     height: 100%;
