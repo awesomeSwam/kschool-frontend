@@ -239,20 +239,18 @@
       </div>
     {/key}
     <div class="ad">
-      <div class="ad-1">
-        <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-VwTjr9CjMkOOoZMO" 
-          data-ad-width   = "320" 
-          data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </div>
-      <div class="ad-2">
-        <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-gmQr4iIxfBLNo64D" 
-          data-ad-width   = "320" 
-          data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </div>  
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
+      crossorigin="anonymous"></script>
+      <!-- pop -->
+      <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-5824103033592509"
+            data-ad-slot="4039344712"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+      <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
     </div>
     <div class="popImage popImage-{p}"></div>
     <div class="leaderboard" on:click={() => l.changeShow()}>
@@ -273,7 +271,6 @@
 
 <style>
   .ad {
-    width: 320px;
     margin: 0 auto;
   }
 
