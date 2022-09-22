@@ -238,31 +238,31 @@
         {comma(count)}
       </div>
     {/key}
-    <div class="ad">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
-      crossorigin="anonymous"></script>
-      <!-- pop -->
-      <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-5824103033592509"
-            data-ad-slot="4039344712"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
-      <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
     <div class="popImage popImage-{p}"></div>
     <div class="leaderboard" on:click={() => l.changeShow()}>
-      <div class="totalCount fontSize">
-        {#if showTotalCount >= 0}
-          🌎 {comma(showTotalCount)}
-        {:else}
-        🌎 ⏳
-        {/if}
+      <div class="leaderboard-info">
+        <div class="totalCount fontSize">
+          {#if showTotalCount >= 0}
+            🌎 {comma(showTotalCount)}
+          {:else}
+          🌎 ⏳
+          {/if}
+        </div>
+        <div class="showLeaderboard fontSize">
+          &ensp;🏆
+        </div>
       </div>
-      <div class="showLeaderboard fontSize">
-        &ensp;🏆
+      <div class="ad">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
+        crossorigin="anonymous"></script>
+        <!-- pop -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:240px;height:90px"
+            data-ad-client="ca-pub-5824103033592509"
+            data-ad-slot="4039344712"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
     </div>
     <Leaderboard bind:this={l} schoolCode={schoolCode} schoolShow={secretMode}/>
@@ -270,7 +270,15 @@
 {/if}
 
 <style>
+  .leaderboard-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  
   .ad {
+    height: 50px;
     margin: 0 auto;
   }
 
@@ -390,7 +398,7 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
     bottom: 0;
     width: 80%;

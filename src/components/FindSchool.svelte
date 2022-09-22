@@ -63,13 +63,11 @@
       crossorigin="anonymous"></script>
       <!-- search -->
       <ins class="adsbygoogle"
-            style="display:block"
-            data-ad-client="ca-pub-5824103033592509"
-            data-ad-slot="1840518795"
-            data-ad-format="auto"
-            data-full-width-responsive="true"></ins>
+        style="display:inline-block;width:240px;height:240px"
+        data-ad-client="ca-pub-5824103033592509"
+        data-ad-slot="1840518795"></ins>
       <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
+        (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
     </div>  
   </div>
@@ -77,7 +75,7 @@
 
 <style>
   .ad {
-    display: contents;
+    margin: 0 auto;
   }
 
   .findSchool {
