@@ -59,27 +59,23 @@
       {/if}
     </div>
     <div class="ad">
-      <div class="ad-1">
-        <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-utueaeGgYHIqbuEP" 
-          data-ad-width   = "320" 
-          data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </div>
-      <div class="ad-2">
-        <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-ePyURk5JmlM3kyxO" 
-          data-ad-width   = "320" 
-          data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </div>
-    </div>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
+      crossorigin="anonymous"></script>
+      <!-- search -->
+      <ins class="adsbygoogle"
+        style="display:inline-block;width:240px;height:240px"
+        data-ad-client="ca-pub-5824103033592509"
+        data-ad-slot="1840518795"></ins>
+      <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>  
   </div>
 {/if}
 
 <style>
   .ad {
-    display: contents;
+    margin: 0 auto;
   }
 
   .findSchool {

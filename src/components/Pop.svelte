@@ -238,33 +238,31 @@
         {comma(count)}
       </div>
     {/key}
-    <div class="ad">
-      <div class="ad-1">
-        <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-VwTjr9CjMkOOoZMO" 
-          data-ad-width   = "320" 
-          data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </div>
-      <div class="ad-2">
-        <ins class="kakao_ad_area" style="display:none;" 
-          data-ad-unit    = "DAN-gmQr4iIxfBLNo64D" 
-          data-ad-width   = "320" 
-          data-ad-height  = "50"></ins> 
-        <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
-      </div>  
-    </div>
     <div class="popImage popImage-{p}"></div>
     <div class="leaderboard" on:click={() => l.changeShow()}>
-      <div class="totalCount fontSize">
-        {#if showTotalCount >= 0}
-          🌎 {comma(showTotalCount)}
-        {:else}
-        🌎 ⏳
-        {/if}
+      <div class="leaderboard-info">
+        <div class="totalCount fontSize">
+          {#if showTotalCount >= 0}
+            🌎 {comma(showTotalCount)}
+          {:else}
+          🌎 ⏳
+          {/if}
+        </div>
+        <div class="showLeaderboard fontSize">
+          &ensp;🏆
+        </div>
       </div>
-      <div class="showLeaderboard fontSize">
-        &ensp;🏆
+      <div class="ad">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
+        crossorigin="anonymous"></script>
+        <!-- pop -->
+        <ins class="adsbygoogle"
+            style="display:inline-block;width:240px;height:90px"
+            data-ad-client="ca-pub-5824103033592509"
+            data-ad-slot="4039344712"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
     </div>
     <Leaderboard bind:this={l} schoolCode={schoolCode} schoolShow={secretMode}/>
@@ -272,8 +270,15 @@
 {/if}
 
 <style>
+  .leaderboard-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  
   .ad {
-    width: 320px;
+    height: 50px;
     margin: 0 auto;
   }
 
@@ -393,7 +398,7 @@
     cursor: pointer;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     position: absolute;
     bottom: 0;
     width: 80%;
