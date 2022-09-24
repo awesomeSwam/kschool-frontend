@@ -54,7 +54,7 @@
   let newS = -1;
   $: {
     (show) ?
-      setTimeout(() => { sendPop(); }, 0) :
+      setTimeout(() => { firstPop(); }, 0) :
       newS = totalCount = showTotalCount = schoolCount = showSchoolCount = schoolRank = -1;
   }
 
@@ -113,6 +113,23 @@
     num = parseInt(num);
     if (num < 0) return false;
     return true;
+  }
+
+  const firstPop = async () => {
+    const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/first/?schoolCode=${schoolCode}`;
+    const response = await fetch(url, { method: "GET" });
+
+    if (response.status === 201) {
+      const data = await response.json();
+      newS = 1;
+      
+      if (token) sendCount -= sentCount;
+      token = data.token;
+ 
+      if (isNumber(data.rank)) schoolRank = data.rank;
+      if (isNumber(data.pop)) updatePop(data.pop);
+      if (isNumber(data.total)) updateTotal(data.total);
+    }
   }
 
   let toManyReq = false;
