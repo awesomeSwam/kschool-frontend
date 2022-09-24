@@ -119,7 +119,7 @@
     const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/first/?schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "GET" });
 
-    if (response.status === 201) {
+    if (response.status === 200) {
       const data = await response.json();
       newS = 1;
       
