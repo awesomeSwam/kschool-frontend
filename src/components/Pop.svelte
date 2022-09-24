@@ -122,9 +122,6 @@
     if (response.status === 200) {
       const data = await response.json();
       newS = 1;
-      
-      if (token) sendCount -= sentCount;
-      token = data.token;
  
       if (isNumber(data.rank)) schoolRank = data.rank;
       if (isNumber(data.pop)) updatePop(data.pop);
