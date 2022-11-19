@@ -266,10 +266,9 @@
           &ensp;🏆
         </div>
       </div>
-      <div class="ad">
+      <!-- <div class="ad">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
         crossorigin="anonymous"></script>
-        <!-- pop -->
         <ins class="adsbygoogle"
             style="display:inline-block;width:240px;height:90px"
             data-ad-client="ca-pub-5824103033592509"
@@ -277,7 +276,7 @@
         <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
         </script>
-      </div>
+      </div> -->
     </div>
     <Leaderboard bind:this={l} schoolCode={schoolCode} schoolShow={secretMode}/>
   </div>
