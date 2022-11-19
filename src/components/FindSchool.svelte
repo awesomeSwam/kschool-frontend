@@ -58,10 +58,9 @@
         {/each}
       {/if}
     </div>
-    <div class="ad">
+    <!-- <div class="ad">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
       crossorigin="anonymous"></script>
-      <!-- search -->
       <ins class="adsbygoogle"
         style="display:inline-block;width:240px;height:240px"
         data-ad-client="ca-pub-5824103033592509"
@@ -69,7 +68,7 @@
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
-    </div>  
+    </div>   -->
   </div>
 {/if}
 
