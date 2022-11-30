@@ -266,6 +266,7 @@
           &ensp;🏆
         </div>
       </div>
+      <div class="alert">학교에 간식 차를 보내준다는 소문은 거짓입니다.</div>
       <!-- <div class="ad">
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5824103033592509"
         crossorigin="anonymous"></script>
@@ -430,6 +431,10 @@
   .totalCount {
     display: flex;
     align-items: center;
+  }
+
+  .alert {
+    margin: 0 auto;
   }
 
   .fontSize {
