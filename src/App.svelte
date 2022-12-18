@@ -24,19 +24,19 @@
 </script>
 
 <main>
+	<FindSchool show={showBool} on:school={saveSchool}/>
+	<Pop show={!showBool} schoolCode={schoolCode} schoolName={schoolName} on:resetSchool={resetSchool}/>
 	{#if alertShow}
 		<div class="alert-container">
 			<div class="alert">
-				<span class="title fontSize"></span>
+				<span class="title fontSize">공지</span>
 				<span class="close fontSize" on:click={() => alertShow = false}>❌</span>
 				<div class="something">
-					안녕하세요.
+					Test
 				</div>
 			</div>
 		</div>
 	{/if}
-	<FindSchool show={showBool} on:school={saveSchool}/>
-	<Pop show={!showBool} schoolCode={schoolCode} schoolName={schoolName} on:resetSchool={resetSchool}/>
 </main>
 
 <style>
