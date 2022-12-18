@@ -20,7 +20,7 @@
 		showBool = true;
 	}
 
-	let alertShow = true;
+	let alertShow = false;
 </script>
 
 <main>
