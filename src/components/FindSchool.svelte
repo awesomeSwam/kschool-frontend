@@ -1,7 +1,6 @@
 <script>
   import fetchSchool from "../functions/fetchSchool.js";
   import { createEventDispatcher } from 'svelte';
-  import App from "../App.svelte";
   const dispatch = createEventDispatcher();
 
   export let show;
