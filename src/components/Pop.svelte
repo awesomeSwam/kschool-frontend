@@ -130,14 +130,14 @@
   }
 
   let toManyReq = false;
-  const maxCount = 150;
+  const maxCount = 100;
   const sendPop = async () => {
     if (toManyReq) {
       toManyReq = false;
       return ;
     }
 
-    const sentCount = (sendCount > maxCount)? 150 : sendCount;
+    const sentCount = (sendCount > maxCount) ? maxCount : sendCount;
     const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
     
