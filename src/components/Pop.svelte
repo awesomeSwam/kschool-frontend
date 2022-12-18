@@ -141,12 +141,6 @@
     const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
     
-    if (response.status === 429) {
-      toManyReq = true;
-      token = "";
-      return ;
-    }
-
     const data = await response.json();
     
     if (response.status === 201) {
@@ -163,6 +157,7 @@
       return ;
     }
 
+    toManyReq = true;
     token = "";
   }
 
