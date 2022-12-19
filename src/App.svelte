@@ -32,7 +32,7 @@
     window.open("https://twitter.com/_awesome_dream");
   }
 
-	let alertShow = false;
+	let alertShow = true;
 
 </script>
 
