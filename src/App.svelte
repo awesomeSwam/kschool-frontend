@@ -25,7 +25,7 @@
   }
 
   const openEventLink = () => {
-    window.open("https://www.youtube.com/watch?v=yBW1HdjRGww").focus();
+    window.open("https://youtu.be/yBW1HdjRGww").focus();
   }
 
   const openTwitterLink = () => {
