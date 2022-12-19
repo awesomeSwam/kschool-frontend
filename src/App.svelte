@@ -24,7 +24,7 @@
     window.open("https://google.com").focus();
   }
 
-	let alertShow = false;
+	let alertShow = true;
 
 </script>
 
