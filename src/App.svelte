@@ -20,7 +20,12 @@
 		showBool = true;
 	}
 
+  const openEventLink = () => {
+    window.open("https://google.com").focus();
+  }
+
 	let alertShow = false;
+
 </script>
 
 <main>
@@ -32,7 +37,10 @@
 				<span class="title fontSize">공지</span>
 				<span class="close fontSize" on:click={() => alertShow = false}>❌</span>
 				<div class="something">
-					Test
+					TEST
+          <br>
+          TEST
+          <a on:click={openEventLink}>Test</a>
 				</div>
 			</div>
 		</div>
@@ -77,18 +85,16 @@
   }
 
   .something {
-    height: 85%;
     margin-top: 30px;
-    overflow-y: auto;
   }
 
   .fontSize {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   @media (max-width: 500px) {
     .fontSize {
-      font-size: 15px;
+      font-size: 17px;
     }
   }
 </style>
