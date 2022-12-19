@@ -20,11 +20,19 @@
 		showBool = true;
 	}
 
-  const openEventLink = () => {
-    window.open("https://google.com").focus();
+  const openJo = () => {
+    window.open("https://www.youtube.com/@jocoding").focus();
   }
 
-	let alertShow = true;
+  const openEventLink = () => {
+    window.open("https://www.youtube.com/watch?v=yBW1HdjRGww").focus();
+  }
+
+  const openTwitterLink = () => {
+    window.open("https://twitter.com/_awesome_dream");
+  }
+
+	let alertShow = false;
 
 </script>
 
@@ -34,13 +42,24 @@
 	{#if alertShow}
 		<div class="alert-container">
 			<div class="alert">
-				<span class="title fontSize">공지</span>
+				<span class="title fontSize">이벤트 알림</span>
 				<span class="close fontSize" on:click={() => alertShow = false}>❌</span>
-				<div class="something">
-					TEST
+				<div class="something">Test
+          <!-- 학교 간식차 이벤트 실제로 진행하겠습니다.
           <br>
-          TEST
-          <a on:click={openEventLink}>Test</a>
+          클릭 수 랭킹 1위 학교에 전교생을 위한 간식차를 보내드리겠습니다.
+          <br>
+          이벤트 기간 : 2022년 12월 19일 (월) ~ 2023년 3월 15일 (수) 12시 기준
+          <br>
+          <br>
+          간식차비는 <a class="link" on:click={openJo}>조코딩</a>님께서 지원해주신다고 하셨습니다.
+          <br>
+          유언비어를 현실화시켜주신 <a class="link" on:click={openJo}>조코딩</a>님께 감사드립니다.
+          <br>
+          자세한 내용은 밑에 있는 링크들을 확인해주세요.
+          <a class="link" on:click={openEventLink}>https://www.youtube.com/@jocoding</a>
+          <br>
+          <a class="link" on:click={openTwitterLink}>https://twitter.com/_awesome_dream</a> -->
 				</div>
 			</div>
 		</div>
@@ -96,5 +115,9 @@
     .fontSize {
       font-size: 17px;
     }
+  }
+
+  .link {
+    cursor: pointer;
   }
 </style>

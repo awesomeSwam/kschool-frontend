@@ -183,7 +183,7 @@
   }
 
   const openJo = () => {
-    window.open("https://www.youtube.com/c/%EC%A1%B0%EC%BD%94%EB%94%A9JoCoding").focus();
+    window.open("https://www.youtube.com/@jocoding").focus();
   }
   
   const openTwitter = () => {
