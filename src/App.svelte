@@ -29,7 +29,7 @@
   }
 
   const openTwitterLink = () => {
-    window.open("https://twitter.com/_awesome_dream/status/1605160471069589506");
+    window.open("https://twitter.com/_awesome_dream/status/1605161640931909632");
   }
 
 	let alertShow = true;
