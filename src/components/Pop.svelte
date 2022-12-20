@@ -7,7 +7,7 @@
   export let schoolCode;
   export let schoolName;
   
-  const updateTime = 6000;
+  const updateTime = 1000 * 10;
   
   let token = "";
   let schoolCount = -1;
@@ -132,12 +132,14 @@
   let toManyReq = false;
   const maxCount = 100;
   const sendPop = async () => {
+
     if (toManyReq) {
       toManyReq = false;
       return ;
     }
 
     const sentCount = (sendCount > maxCount) ? maxCount : sendCount;
+
     const url = `https://port-0-kschool-backend-37y7e24l7jiwra5.gksl1.cloudtype.app/pop/?count=${sentCount}&token=${token}&schoolCode=${schoolCode}`;
     const response = await fetch(url, { method: "POST" });
     
@@ -146,7 +148,7 @@
     if (response.status === 201) {
       newS = 1;
       
-      if (token) sendCount -= sentCount;
+      if (token) sendCount = 0;
       token = data.token;
  
       if (isNumber(data.rank)) schoolRank = data.rank;
