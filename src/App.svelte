@@ -29,7 +29,7 @@
   }
 
   const openTwitterLink = () => {
-    window.open("https://twitter.com/_awesome_dream");
+    window.open("https://twitter.com/_awesome_dream/status/1605160471069589506");
   }
 
 	let alertShow = true;
@@ -52,15 +52,15 @@
           이벤트 기간 : 2022년 12월 19일 (월) ~ 2023년 3월 15일 (수) 12시 기준
           <br>
           <br>
-          간식차비는 <a class="link" on:click={openJo}>조코딩</a>님께서 지원해주신다고 하셨습니다.
+          간식차비는 <a class="link fontSize" on:click={openJo}>조코딩</a>님께서 지원해주신다고 하셨습니다.
           <br>
-          유언비어를 현실화시켜주신 <a class="link" on:click={openJo}>조코딩</a>님께 감사드립니다.
+          루머를 현실로 만들어주신 <a class="link fontSize" on:click={openJo}>조코딩</a>님께 진심으로 감사드립니다.
           <br>
           자세한 내용은 밑에 있는 링크들을 확인해주세요.
           <br>
-          <a class="link" on:click={openEventLink}>유튜브 영상 바로가기</a>
+          <a class="link fontSize" on:click={openEventLink}>유튜브 영상 바로가기</a>
           <br>
-          <a class="link" on:click={openTwitterLink}>트위터 공지 바로가기</a>
+          <a class="link fontSize" on:click={openTwitterLink}>트위터 공지 바로가기</a>
           <br>
 				</div>
 			</div>
