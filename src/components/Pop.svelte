@@ -130,7 +130,7 @@
   }
 
   let toManyReq = false;
-  const maxCount = 100;
+  const maxCount = 200;
   const sendPop = async () => {
 
     if (toManyReq) {
