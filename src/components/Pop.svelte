@@ -145,7 +145,7 @@
     
     const data = await response.json();
     
-    if (response.status === 201) {
+    if (response.status === 201 || response.status === 200) {
       newS = 1;
       
       if (token) sendCount = 0;
