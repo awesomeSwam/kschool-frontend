@@ -38,11 +38,11 @@
   }
 
   document.addEventListener("keydown", (e) => {
-    if (!e.repeat) pop();
+    if (!e.repeat && e.isTrusted) pop();
   });
 
-  document.addEventListener("pointerdown", () => {
-    pop();
+  document.addEventListener("pointerdown", (e) => {
+    if(e.isTrusted) pop();
   });
   
   setInterval(() => {
