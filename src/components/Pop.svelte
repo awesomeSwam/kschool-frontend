@@ -20,6 +20,11 @@
   let l, p = 0;
   let secretMode = localStorage.getItem("secretMode") === "true" || false;
   
+  if (navigator.webdriver) {
+    localStorage.setItem("secretMode", "true");
+    location.reload();
+  }
+  
   
   const changeSecretMode = () => {
     secretMode = !secretMode;
@@ -38,11 +43,11 @@
   }
 
   document.addEventListener("keydown", (e) => {
-    if (!e.repeat) pop();
+    if (!e.repeat && e.isTrusted) pop();
   });
 
-  document.addEventListener("pointerdown", () => {
-    pop();
+  document.addEventListener("pointerdown", (e) => {
+    if(e.isTrusted) pop();
   });
   
   setInterval(() => {
