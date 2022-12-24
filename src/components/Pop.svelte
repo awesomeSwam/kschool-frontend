@@ -23,7 +23,6 @@
   if (navigator.webdriver) {
     localStorage.setItem("secretMode", "true");
     location.reload();
-    return;
   }
   
   
